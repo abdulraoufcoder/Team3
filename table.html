@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Car Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24,
+}
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    color: #fff;
+}
+.delete-button{
+    background-color:#fff;
+    border: none;
+    cursor: pointer;
+}
+.update-button{
+    background-color:#fff;
+    border: none;
+    cursor: pointer;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            position: relative;
+        }
+        .content {
+            max-width: 100%;
+            margin: 0px auto;
+            position: relative;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+
+        th, td {
+            border: 1px solid rgba(0, 0, 0, 1);
+            padding: 8px;
+            text-align: center;
+            color:rgba(0, 0, 0, 1);
+            font-weight: 400;
+            color: rgba(0, 0, 0, 1);
+
+        }
+
+        th {
+            background-color: #fff;
+            border: 1px solid rgba(112, 125, 250, 1);
+            font-weight: 700;
+        }
+
+        .create-button {
+            position: absolute;
+            top: 2px;
+            right: 10px;
+            padding: 10px;
+            background-color: rgba(112, 125, 250, 1);
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+        @media screen and (max-width: 600px) {
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+    <h1>Cars</h1>
+    <a href="form.html" class="create-button">Add Cars</a></div>
+
+    <table id="userTable" class="hidden">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Fuel</th>
+                <th>Speed</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="userData"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
